@@ -6,19 +6,26 @@ const BlockGame = () => {
   const movePlayer = (direction) => {
     const step = 10;
     const { x, y } = position;
-
+ //   const gameContainer = document.getElementById("game-container");
+//    const player = document.getElementById("player");
+    const containerWidth = 400;
+    const containerHeight = 400;
     switch (direction) {
       case "up":
-        setPosition({ x, y: y - step });
+        if (y - step >= 0)
+           setPosition({ x, y: y - step });
         break;
       case "down":
-        setPosition({ x, y: y + step });
+        if (y + step <= containerHeight - 40)
+           setPosition({ x, y: y + step });
         break;
       case "left":
-        setPosition({ x: x - step, y });
+        if (x - step >= 0)
+          setPosition({ x: x - step, y });
         break;
       case "right":
-        setPosition({ x: x + step, y });
+        if (x + step <= containerWidth - 40)
+            setPosition({ x: x + step, y });
         break;
       default:
         break;
