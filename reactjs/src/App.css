@@ -1,0 +1,42 @@
+#same{
+  display:flex;
+  align-items:center;
+  }
+  #right-btn{
+      background-color: lightskyblue;
+     height: 400px;
+  }
+  #left-btn{
+      margin-left: 500px;
+     height: 400px;
+     background-color: lightskyblue;
+  }
+  #up-btn{
+      margin-top: 150px;
+      margin-left: 540px;
+     width: 400px;
+     height: 30px;
+     background-color: lightskyblue;
+  }
+  #down-btn{
+      margin-left: 540px;
+     width: 400px;
+     height: 30px;
+     background-color: lightskyblue;
+  }
+  
+      #game-container {
+        position: relative;
+        width: 400px;
+        height: 400px;
+        border: 1px solid #000;
+      }
+  
+      #player {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40px;
+        height: 40px;
+        background-color: lightgreen;
+      }
